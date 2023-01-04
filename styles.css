@@ -1,0 +1,146 @@
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {    
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    margin-top: 10px;
+    width: 10ch;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F2EAE2;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.padded {
+    padding-inline: 30px;
+    justify-content: left;
+    text-align: left;
+}
+
+.item-info {
+    background-color: white;
+    width: 300px;
+    height: 450px;
+    border-radius: 0px 8px 8px 0px;
+
+}
+
+
+
+picture img {
+    margin-top: 5px;
+    border-radius: 8px 0 0 8px;
+    max-height: 450px;
+}
+
+@media screen and (max-width: 1024px) {
+    picture img {
+        max-height: 240px;
+        margin-bottom: -10px;
+        border-radius: 8px 8px 0 0;
+
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .item-info {
+        height: 375px;
+        min-width: 343px;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    h1 {
+        min-width: 15ch;
+
+    }
+    .prices {
+        margin-bottom: 10px;
+    }
+    
+    .description {
+        width: 103%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .prices {
+        margin-bottom: 25px;
+    }
+
+    picture img {
+        
+    }
+    
+}
+
+#item-type {
+    margin-top: 20px;
+    color: #6C7289;
+    font-weight: 500;
+    font-size: 12px;  
+    letter-spacing: 5px;
+    text-transform: uppercase; 
+}
+
+.description {
+    color: #6C7289;
+    margin-block: 25px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.prices {
+    font-family: 'Fraunces', serif;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+button {
+
+    border: none;
+    border-radius: 8px;
+    background-color: #3D8168;
+    color: white;
+    display: flex;
+    align-items: left;    
+    gap: 10px;
+    padding: 15px;
+    justify-content: center;
+    min-width: 100%;
+
+}
+
+button:hover {
+    background-color: #1A4032;
+    cursor:pointer;
+}
+#discount {
+    color: #3D8168;
+    font-size: 30px;
+}
+
+.line {
+
+    color: #6C7289;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+
+}
+
+
